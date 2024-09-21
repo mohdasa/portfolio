@@ -1,0 +1,185 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no horizontal scrolling */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Ensure default text is white for visibility */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Styling for Contact Section */
+.contact-section {
+    margin-top: 2rem;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-card {
+    background-color: #444;
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Slightly larger shadow for a lifted effect */
+}
+
+.contact-card h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact-info a {
+    color: #c08a2e;
+    text-decoration: none;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #c08a2e;
+}
+
+/* Styling for Contact Form */
+.contact-form-card {
+    background-color: #444;
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Slightly larger shadow for a lifted effect */
+}
+
+.contact-form-card form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.contact-form-card form label {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem; /* Slightly smaller font size for better fit */
+    color: #ddd; /* Lighter color for labels */
+}
+
+.contact-form-card form input, 
+.contact-form-card form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #666; /* Darker border for better contrast */
+    background-color: #555; /* Slightly lighter background */
+    color: #fff; /* Text color inside input fields */
+}
+
+.contact-form-card form input::placeholder, 
+.contact-form-card form textarea::placeholder {
+    color: #bbb; /* Placeholder text color */
+}
+
+.contact-form-card form button.submit-btn {
+    padding: 0.8rem 2rem;
+    background-color: #c08a2e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transition for a slight scale effect */
+}
+
+.contact-form-card form button.submit-btn:hover {
+    background-color: #d18b2f;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Footer Section */
+.edithome {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333; /* Optional background color */
+    padding: 10px;
+}
+
+.edithome h3 {
+    color: #fff; /* Ensure text is visible on dark background */
+    font-size: 1.2rem;
+    margin: 0; /* Remove any default margin */
+}

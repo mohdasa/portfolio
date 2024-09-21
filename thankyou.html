@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Alert</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1167a0;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh; /* Full height for centering */
+            margin: 0; /* Remove default margin */
+            position: relative; /* Enable absolute positioning for button */
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .error-message {
+            font-size: 2rem; /* Larger font for emphasis */
+            margin-bottom: 20px; /* Space below the error message */
+            text-align: center; /* Center the error message */
+        }
+        .error-alert {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: auto; /* Center the alert */
+            text-align: center; /* Center text in alert */
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px; /* Adjusted padding for button size */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            position: absolute; /* Absolute positioning */
+            bottom: 20px; /* Distance from bottom */
+            right: 20px; /* Distance from right */
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="error-message">Error: Message Not Sent!</h1>
+    <section class="error-alert">
+        <p>⚠️ Oops! We encountered a technical error while sending your message. Please try again later.</p>
+        <p>You can also reach out to me via email or phone. Your thoughts matter, and I look forward to connecting!</p>
+    </section>
+    <a href="home.html" class="btn">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,223 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Ensure no horizontal scrolling */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+#intro {
+    margin: 2rem;
+    text-align: justify;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+#intro h1{
+   color: #fff;
+   font-size: 5rem;
+}
+body {
+    /* background: scroll; */
+    background-color: #333;
+}
+h1 {
+    margin-bottom: 1rem; /* Adds space below the h1 element */
+}
+
+p1 {
+    margin-top: 1rem; /* Adds space above the p element */
+    font-size: 2rem;
+}
+p2 {
+    margin-top: 1rem; /* Adds space above the p element */
+    font-size: 2rem;
+}
+p3 {
+    margin-top: 1rem; /* Adds space above the p element */
+    font-size: 2rem;
+}
+.card {
+    margin-left: 5rem;
+    margin-top: 15rem;
+    width: 50px;
+    height: 800px;
+}
+#card .card {
+    width: 1200px; /* Fixed width for the card */
+    height: 700px; /* Fixed height for the card */
+    border: 1px solid #ddd; /* Optional border for visibility */
+    border-radius: 8px; /* Slight rounding of the card corners */
+    overflow: hidden; /* Ensures that content doesn't overflow */
+}
+
+#card .card-img-top {
+    width: 100%; /* The image will take the full width of the card */
+    height: 300px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+#card .card-body {
+    padding: 16px; /* Adds some space inside the card body */
+    height: calc(100% - 200px); /* Adjusts the body height based on the image size */
+}
+
+#card .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+}
+
+#card .social-icons a {
+    color: #333; /* Color of the icon */
+    font-size: 20px; /* Size of the icons */
+    text-decoration: none; /* Removes underline from links */
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+#card .social-icons a:hover {
+    color: #c08a2e; /* Change color when hovering over the icon */
+}
+
+.social-icons {
+    margin-top: 10px;
+    margin-left: 10rem; /* This adds the left margin */
+    display:flexbox;
+    justify-content:flex-start;
+}
+
+.social-icons a {
+    color: #fff; /* Color of the icon */
+    font-size: 30px; /* Size of the icons */
+    text-decoration: none; /* Removes underline from links */
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #c08a2e; /* Change color when hovering over the icon */
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Ensure the body and container fill the entire screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* body h1{
+    margin-left: 10rem;
+    color: #fff;
+} */
+/* boyd h2{
+    margin-left: 3rem;
+    color: #fff;
+} */
+/* Remove any border or spacing around the image */
+.illustration img {
+    display: block; /* Removes bottom margin/padding */
+    width: 100%; /* Ensures the image fills its container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Makes sure the image covers the space without distortion */
+}
+
+/* Optional: If you need the container to fit the entire viewport */
+.qualification-section {
+    display: flex;
+    align-items: flex-start; /* Aligns content to the top */
+}
+
+/* Ensures no extra margin or padding around the section */
+.qualification-section .container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Adjust based on your layout needs */
+}
+
+/* Adjust text content positioning */
+.text-content {
+    flex: 1; /* Takes up the remaining space */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Optional: Make sure the image container fills the available space */
+.illustration {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+/* CSS for edithome section to center h3 at the bottom of the page */
+.edithome {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333; /* Optional background color */
+    padding: 10px;
+}
+
+.edithome h3 {
+    color: #fff; /* Ensure text is visible on dark background */
+    font-size: 1.2rem;
+    margin: 0; /* Remove any default margin */
+}
+
+    

@@ -1,0 +1,199 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no horizontal scrolling */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Ensure default text is white for visibility */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 6rem 2rem;
+    background-color: #333; /* Light background for contrast */
+    color: #fff; /* Dark text for the experience section */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.card h4 {
+    font-size: 1.4rem;
+    color: #95a5a6;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+}
+
+.card .duration {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 1.2rem;
+    font-style: italic;
+}
+
+.card .description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.7;
+    padding: 0 1.2rem;
+}
+
+/* Card hover effect - add a colored border */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(45deg, #3498db, #9b59b6);
+    transition: width 0.3s ease;
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+.card {
+    position: relative; /* for ::before positioning */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 3rem 1rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .card h3 {
+        font-size: 1.6rem;
+    }
+
+    .card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card h4 {
+        font-size: 1.1rem;
+    }
+}
+.edithome {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333; /* Optional background color */
+    padding: 10px;
+}
+
+.edithome h3 {
+    color: #fff; /* Ensure text is visible on dark background */
+    font-size: 1.2rem;
+    margin: 0; /* Remove any default margin */
+}
+

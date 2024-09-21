@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure no horizontal scrolling */
+body, html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333; /* Full page dark background color */
+    color: #fff; /* Default text color */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Projects grid layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    margin: 30px auto 0; /* Top margin of 30px */
+    max-width: 1200px;
+}
+
+/* Card styles */
+/* Card styles */
+.project-card {
+    background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent background */
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+    height: 400px; /* Set a fixed height for the cards */
+}
+
+/* Card content */
+.project-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white; /* Ensure text is visible on the background */
+    padding: 20px;
+    height: 100%; /* Make it take the full height of the card */
+    background-size: cover; /* Cover the inner area */
+    background-position: center; /* Center the image */
+    background-image: var(--bg-url); /* Use dynamic background image */
+}
+
+
+/* Button styling */
+.project-buttons {
+    margin-top: auto; /* Push buttons to the bottom */
+}
+
+.project-buttons a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    margin-top: 10px; /* Space between buttons */
+}
+
+.project-buttons a:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+}
+
+.edithome {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333; /* Optional background color */
+    padding: 10px;
+}
+
+.edithome h3 {
+    color: #fff; /* Ensure text is visible on dark background */
+    font-size: 1.2rem;
+    margin: 0; /* Remove any default margin */
+}
